@@ -1330,7 +1330,7 @@ html, body {
 
 @media (max-width: 600px) {
   .flowers {
-    transform: scale(0.75);
+    transform: scale(clamp(0.85, 1, 1.05));
   }
 }
 
