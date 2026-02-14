@@ -10,16 +10,6 @@
   --dark-color: #000;
 }
 
-body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--dark-color);
-  overflow: hidden;
-  perspective: 1000px;
-}
-
 .night {
   position: fixed;
   left: 50%;
@@ -1321,24 +1311,26 @@ body {
 }/*# sourceMappingURL=main.css.map */
 
 body {
-  min-height: 100vh;
-  min-height: 100svh;
-  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  height: 100vh;
+  height: 100svh;
+  height: 100dvh;
+
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+html, body {
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
-  body {
-    align-items: center;
-    justify-content: center;
-  }
-
   .flowers {
     transform: scale(0.75);
-    margin-top: -12vh;
-  }
-
-  .flower {
-    bottom: 3vmin;
   }
 }
 
